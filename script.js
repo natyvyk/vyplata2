@@ -1,5 +1,14 @@
-const sazba = Number(prompt("Jaká je vaše hodinová sazba?", "200"));
-const pocetHodin = Number(prompt("Kolik hodin denně pracujete?", "8"))
-const pocetDni = Number(prompt("Kolik dní v měsíci pracujete?","21"))
+const nazev = "Kniha 1"
+const autor = "Natálie Vykoukalová"
+const cena = 450
+const naSklade = true
 
-document.body.innerHTML += "<p> Vaše měsíční výplata je " + pocetHodin * pocetDni * sazba + " Kč. </p>"
+const kniha = {
+    nazev: "Kniha 1",
+    autor: "Natálie Vykoukalová",
+    cena: 450,
+    naSklade: true,
+}
+
+document.body.innerHTML += "<p>Kniha: " + nazev + ", autor: " + autor + "</p>"
+document.body.innerHTML += "<p>Kniha: " + kniha.nazev + ", autor: " + kniha.autor + "</p>"
